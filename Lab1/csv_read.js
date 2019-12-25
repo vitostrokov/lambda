@@ -20,7 +20,7 @@ exports.handler = async(event, context) => {
 
     var data = await S.getObject({
         Bucket:srcBucket,
-        Key: stcKey,
+        Key: srcKey,
     }).promise();
 
     console.log("raw CSV data");
